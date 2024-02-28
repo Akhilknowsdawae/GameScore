@@ -1,2 +1,2 @@
-def mainPage():
+def mainPage(request):
     return None

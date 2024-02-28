@@ -17,9 +17,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+
 from GameScore.GameScoreApp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.mainPage, name='index'),
-]

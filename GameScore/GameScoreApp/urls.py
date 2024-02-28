@@ -23,3 +23,4 @@ from GameScore.GameScoreApp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.mainPage, name='index'),
+]

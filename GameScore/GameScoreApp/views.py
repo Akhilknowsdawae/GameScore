@@ -1,0 +1,2 @@
+def mainPage():
+    return None

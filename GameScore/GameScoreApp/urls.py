@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.urls import path
 
 
-from GameScore.GameScoreApp import views
+from GameScore.GameScoreAppDev import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),

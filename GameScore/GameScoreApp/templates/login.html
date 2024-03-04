@@ -1,35 +1,39 @@
 <!DOCTYPE html>
 <html lang ="en-ca">
 
-<img src="wireframe image.jpg" alt="GameScore Logo" width="50" height="50">
-<h1> GameScore </h1>
+<link rel="stylesheet" href="styles.css">
 
-<!-- Contains a lable, form and button for a search bar-->
-<form>
-    <label for="search">Search:</label>
-    <input type="text" id="search" name="searchbar" autocomplete = "" placeholder="Search...">
-    <button type ="button">🔎</button>
-</form>
-<br>
-<body> <label for="log/sign">Login/SignUp</label></body>
+<header class="header">
+    <img src="wireframe image.jpg" alt="GameScore Logo" width="50" height="50">
+    <h1> GameScore </h1>
+    
+    <!-- Contains a lable, form and button for a search bar-->
+    <form>
+        <label for="search">Search:</label>
+        <input type="text" id="search" name="searchbar" autocomplete = "" placeholder="Search...">
+        <button type ="button">🔎</button>
+    </form>
+    <br>
+    <body class="login"> <label for="log/sign">Login/SignUp</label></body>
+</header>
+
 
 <!-- Section for Login form -->
-<div>
+<div class="form">
     <h1>Login</h1>
     <form>
-        <label>Username: </label>
-        <input type="text" placeholder="">
+        <input type="text" placeholder="Username: ">
 
-        <hr>
+        <hr class="hr">
 
-        <label>Password: </label>
-        <input type="password" placeholder="">
+        <input type="password" placeholder="Password: ">
 
-        <hr>
+        <hr class="hr">
 
         <input type="button" value="Login">
     </form>
-
+    
     <!-- Leads to signup page -->
-    <p><a href="signup.html">Make a new account</a></p>
+    <p class="newaccount"><a href="signup.html">Make a new account</a></p>
+
 </div>

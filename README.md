@@ -45,3 +45,6 @@ The product is set for the investor check-in date in April. However, flexibility
 
 
 **Definition of Done:**
+- Merge code to main via pull request
+- Reviewed by at least one person
+- Automated Tests via Continuous integration/deployment

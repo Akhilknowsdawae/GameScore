@@ -1,19 +1,22 @@
 from django.shortcuts import render
-from .forms import LoginForm
+
+from .models import Game, Review
 
 
 def mainPage(request):
-
     return render(request, 'index.html')
 
 
-def sign_in(request):
-    if request.method == 'GET':
-        form = LoginForm()
-        return render(request, 'login.html', {'form': form})
+def gamePage(request):
+    return render(request, 'GamePage.html')
 
 
-def sign_up(request):
-    if request.method == 'GET':
-        form = RegisterForm()
-        return render(request, 'signup.html', {'form': form})
+def gameReviewView(request):
+    game = Game.objects.get(id=1)
+    reviews = Review.objects.filter(gameID_id=game.id)
+    context = {
+        'game': game,
+        'reviews': reviews,
+    }
+
+    return render(request, 'gameReviewPage.html', context)

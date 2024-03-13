@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{game.name}}</title>
+</head>
+<body>
+{{game.name}}
+<br>
+{{game.description}}
+<br>
+<br>
+{% for review in reviews %}
+    {{review.title}}
+    <br>
+    {{review.description}}
+    <br>
+{% endfor %}
+</body>
+</html>

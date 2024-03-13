@@ -13,10 +13,10 @@ def gamePage(request):
 
 def gameReviewView(request):
     game = Game.objects.get(id=1)
-    reviews = Review.objects.get()
+    reviews = Review.objects.filter(gameID_id=game.id)
     context = {
         'game': game,
         'reviews': reviews,
     }
 
-    return render(request, 'gameReviewView.html', context)
+    return render(request, 'gameReviewPage.html', context)

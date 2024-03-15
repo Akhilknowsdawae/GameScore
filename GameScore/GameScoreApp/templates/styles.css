@@ -2,55 +2,161 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Muli';
 }
 
+/* Header style */
 .header {
-    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 0px;
     text-align: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0px;
     margin-bottom: 40px;
 }
 
+.header img {
+    margin-left: 40px;
+}
+
+.header h1 {
+    margin-left: 40px;
+}
+
+/* Searchbar style */
+.searchbar input {
+    position: relative;
+    margin-left: 1000px;
+    width: 400px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+/* Search icon in search bar style */
+.searchbar i {
+    position: absolute;
+    font-size: 20px;
+    margin-left: -40px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/* Search icon in search bar hover style */
+/* CHANGE COLOR ONCE PALETTE IS DECIDED */
+.searchbar i:hover {
+    color: blue;
+    transition: 0.5s;
+}
+
+/* Searchbar button icon */
+/* NOT BEING USED RIGHT NOW
+.searchbar button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    margin-left: -45px;
+    border: none;
+    background: none;
+    font-size: 20px;
+} */
+
+/* Login/Sign Up text style */
+.loginsignup {
+    font-size: 20px;
+    margin-left: 25px;
+    color: black;
+    transition: 0.5s;
+}
+
+/* CHANGE COLOR ONCE PALETTE IS DECIDED */
+.loginsignup:hover {
+    color: blue;
+    transition: 0.5s;
+}
+
+/* Login box background color */
 .login {
     background-color: white;
 }
 
-.login .form {
+/* Style for the login box */
+.form {
     width: 900px;
     height: 650px;
     margin: auto;
+    /* Aligns all items within the form <div> to the center */
+    text-align: center;
     padding: 0px 160px;
     border: 1px solid black;
     border-radius: 25px;
 }
 
-.login h1 {
+/* "Login" text style */
+.form h1 {
     font-size: 30px;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 60px;
 }
 
-.login .form input {
+/* Style for the Username box */
+.form input[type=text]{
     width: 100%;
     height: 100%;
-    padding: 10px 45px 20px 20px;
+    padding: 20px 45px 20px 20px;
     margin-top: 30px;
     border: 1px solid black;
+    transition: 0.5s;
 }
 
-.login .form button {
-    margin-top: 20px;
-}
-
-.login .hr {
+/* Style for the Password box */
+.form input[type=password]{
+    width: 100%;
+    height: 100%;
+    padding: 20px 45px 20px 20px;
     margin-top: 30px;
+    border: 1px solid black;
+    transition: 0.5s;
 }
 
-.login .newaccount {
+/* Style for the login button */
+.form input[type=button] {
     text-align: center;
+    width: 40%;
+    height: 100%;
+    padding: 20px 20px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    border: 1px solid black;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+/* Drop shadow appears/disappears when Username, Password, and Login boxes are hovered over */
+.form input:hover {
+    box-shadow: inset 0px 1.5px 6px #b1b1b1;
+    transition: 0.5s;
+}
+
+/* Style for the lines between the Username, Password, and Login boxes */
+.hr {
     margin-top: 30px;
 }
 
+/* Style for "Make a new account" link which leads to Sign Up page */
+.newaccount a {
+    margin-top: 60px;
+    color: black;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+/* "Make a new account" link becomes (color?) when hovered over */
+/* CHANGE COLOR ONCE PALETTE IS DECIDED */
+.newaccount a:hover {
+    color: blue;
+    transition: 0.5s;
+}

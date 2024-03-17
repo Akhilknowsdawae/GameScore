@@ -16,5 +16,16 @@
     {{review.description}}
     <br>
 {% endfor %}
+<form action="{% url 'submitReview' %}" method="post">
+{% csrf_token %}
+    <label for="Title">Title</label>
+    <input id="Title" type="text" name="Title" value="">
+    <br>
+    <label for="Description">Description</label>
+    <input id="Description" type="text" name="Description" value="">
+    <br>
+    <br>
+    <input type="submit" value="Submit Review">
+    </form>
 </body>
 </html>

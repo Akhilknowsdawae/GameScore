@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang ="en-ca">
+<link rel="stylesheet" href="HomePageStyle.css">
 
 
-<img src="wireframe image.jpg" alt="GameScore-Logo" width="50" height="50">
-<h1> GameScore </h1>
+ <h1> <img src="wireframe image.jpg" alt="GameScore-Logo" width="50" height="50">
+ GameScore 
 
+ <div class= "topsearch">
+ <h2>
 <!-- Contains a lable, form and button for a search bar-->
 <form> 
     <label for="search">Search:</label> 
@@ -12,21 +15,31 @@
     <button type ="button">🔎</button>
 </form>
 <br> 
-<body> <label for="log/sign">Login/SignUp</label></body>
+<body> <div class=log> <label for="log/sign" >Login/SignUp </label></body> </div>
+</h2>
+</div>
+</h1>
 
 <!-- Contains labels and images for a featured game list -->
-<h2> Featured Game: 
-<img src="wireframe image.jpg" alt="featured game" width="250" height="75"> <br> <br>
+<div class="featured">
+<h3> Featured Game: </h3> <br>
+<img src="wireframe image.jpg" alt="featured game" width="400" height="150"> <br> <br>
+</div>
 
- Top Rated: 
-<img src="wireframe image.jpg" alt="Top Rated" width="250" height="75"> <br> <br>
+<div class="Top"> 
+<img src="wireframe image.jpg" alt="Top Rated" width="400" height="150"> <br> <br>
+<h3> Top Rated: </h3> <br>
+</div>
 
-Indie Hits:
-<img src="wireframe image.jpg" alt="Indie Hits" width="250" height="75"> <br> <br>
+<div class="featured"> 
+<h3> Indie Hits: </h3> <br>
+<img src="wireframe image.jpg" alt="Indie Hits" width="400" height="150"> <br> <br>
+</div>
 
-</h2>
+</h3>
 
 <!-- Creates a browse menu, with a search bar, elements in a list and search filters-->
+<div class = "searchList"> 
 <h3> 
     <form> 
     <label for="search">Search:</label> 
@@ -34,13 +47,14 @@ Indie Hits:
     </form>
 
     <ul>
-         <li> <img src="wireframe image.jpg" alt="Filler Game" width="140" height="75"> Game #1</li>
-         <li> <img src="wireframe image.jpg" alt="Filler Game" width="140" height="75"> Game #2</li>
-         <li> <img src="wireframe image.jpg" alt="Filler Game" width="140" height="75"> Game #3</li>
-         <li> <img src="wireframe image.jpg" alt="Filler Game" width="140" height="75"> Game #4</li>
+         <li> <img src="wireframe image.jpg" alt="Filler Game" width="140" height="75"> Game #1 </li> <hr>   
+         <li> <img src="wireframe image.jpg" alt="Filler Game" width="140" height="75"> Game #2</li> <hr>
+         <li> <img src="wireframe image.jpg" alt="Filler Game" width="140" height="75"> Game #3</li> <hr>
+         <li> <img src="wireframe image.jpg" alt="Filler Game" width="140" height="75"> Game #4</li> <hr>
     </ul>
 
 </h3>
+</div>
 
 <h3> 
     Filters: 

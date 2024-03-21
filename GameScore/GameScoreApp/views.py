@@ -4,7 +4,7 @@ from .models import Game, Review, UserReview
 
 
 def mainPage(request):
-    return render(request, 'index.html')
+    return render(request, 'HomePage.html')
 
 
 def gamePage(request):

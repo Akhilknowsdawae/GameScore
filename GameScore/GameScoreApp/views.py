@@ -49,3 +49,11 @@ def submitReview(request):
     newReview.save()
 
     return redirect('index')
+
+
+def login(request):
+    return render(request, 'login.html')
+
+
+def signUp(request):
+    return render(request, 'signUp.html')

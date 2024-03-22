@@ -12,9 +12,10 @@
     <input type="text" id="search" name="searchbar" autocomplete = "" placeholder="Search..."> 
     <button type ="button">🔎</button>
 </form>
-<br> 
-<body> <label for="log/sign">Login/SignUp</label></body>
-
+<br>
+<a href="{% url 'login' %}">
+    <label for="log/sign">Login/SignUp</label>
+</a>
 
 <h1>{{game.name}}</h1>
 <img src="wireframe image.jpg" alt="GameScore-Logo" width="250" height="200"> <br> 

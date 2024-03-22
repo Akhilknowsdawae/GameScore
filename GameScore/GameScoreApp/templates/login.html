@@ -4,9 +4,10 @@
 <link rel="stylesheet" href="styles.css">
 
 <header class="header">
-    <img src="wireframe image.jpg" alt="GameScore Logo" width="50" height="50">
-    <h1> GameScore </h1>
-    
+<a href="{% url 'index' %}">
+<img src="wireframe image.jpg" alt="GameScore-Logo" width="50" height="50">
+<h1> GameScore </h1>
+</a>
     <!-- Contains a lable, form and button for a search bar-->
     <form>
         <label for="search">Search:</label>
@@ -34,6 +35,6 @@
     </form>
     
     <!-- Leads to signup page -->
-    <p class="newaccount"><a href="signup.html">Make a new account</a></p>
+    <p class="newaccount"><a href="{% url 'signUp' %}">Make a new account</a></p>
 
 </div>

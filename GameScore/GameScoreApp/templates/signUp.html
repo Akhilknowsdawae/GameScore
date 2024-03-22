@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang ="en-ca">
 
-<img src="wireframe image.jpg" alt="GameScore Logo" width="50" height="50">
+<a href="{% url 'index' %}">
+<img src="wireframe image.jpg" alt="GameScore-Logo" width="50" height="50">
 <h1> GameScore </h1>
-
+</a>
 <!-- Contains a lable, form and button for a search bar-->
 <form class="searchbar">
     <label for="search">Search:</label>
@@ -41,5 +42,5 @@
     </form>
 
     <!-- Leads to login page -->
-    <p>Already have an account? <a href="login.html">Login here</a></p>
+    <p>Already have an account? <a href="{% url 'login' %}">Login here</a></p>
 </div>

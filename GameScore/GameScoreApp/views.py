@@ -42,13 +42,13 @@ def submitReview(request):
 
     newReview.title = userInput.get('Title')
     newReview.description = userInput.get('Description')
-    newReview.score = 5
+    newReview.score = int(userInput.get('score'))
     newReview.gameID = Game.objects.get(id=1)
     newReview.userID = UserReview.objects.get(id=1)
 
     newReview.save()
 
-    return redirect('index')
+    return redirect('gamePage')
 
 
 def login(request):

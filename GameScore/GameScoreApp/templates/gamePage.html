@@ -24,21 +24,33 @@
 {{game.description}}
 
  <h3> Overall Score: <br> {{game.overallRating}}/10  <br> <br>
-     Reviews:
-     <br>
-        -------------------------------------
-{% for review in reviews %}
-     <br>
-    {{review.title}}
+          <form action="{% url 'submitReview' %}" method="post">
+{% csrf_token %}
+    <label for="Title">Title</label>
+    <input id="Title" type="text" name="Title" value="">
     <br>
-    {{review.description}}
+    <label for="Description">Description</label>
+    <input id="Description" type="text" name="Description" value="">
     <br>
-     Score:{{review.score}}
+         <label for="score">Review Score:</label>
+         <select name="score" id="score">
+             <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5" selected>5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+    <input type="submit" value="Submit Review">
+    </form>
      <br>
-     -------------------------------------
-{% endfor %}
      <br>
-     <br>
+
     Top Review: <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> 
     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam <br>
     <br>
@@ -50,6 +62,23 @@
     Followed Reviewers: <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> 
     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam <br>
     <br>
+     <br> Make a review for this game:
+     <br>
+         Reviews:
+     <br>
+        -------------------------------------
+{% for review in reviews %}
+     <br>
+    {{review.title}}
+    <br>
+     Score: {{review.score}}
+    <br>
+     {{review.description}}
+     <br>
+     -------------------------------------
+{% endfor %}
+     <br>
+     <br>
  <h3>
 
 <!-- Contains labels and images for a featured game list -->

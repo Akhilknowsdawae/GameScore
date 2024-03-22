@@ -2,55 +2,150 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Muli';
 }
 
+/* Header */
 .header {
-    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 0px;
     text-align: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0px;
     margin-bottom: 40px;
 }
 
-.login {
-    background-color: white;
+.header img {
+    margin-left: 40px;
 }
 
-.login .form {
+.header h1 {
+    margin-left: 40px;
+}
+
+/* Searchbar */
+.searchbar input {
+    position: relative;
+    margin-left: 1000px;
+    width: 400px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+/* Search icon */
+.searchbar i {
+    position: absolute;
+    font-size: 20px;
+    margin-left: -40px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/* HOVER - Search icon  */
+/* CHANGE COLOR ONCE PALETTE IS DECIDED */
+.searchbar i:hover {
+    color: blue;
+    transition: 0.5s;
+}
+
+/* Login/Sign Up text */
+.loginsignup {
+    font-size: 20px;
+    margin-left: 25px;
+    color: black;
+    transition: 0.5s;
+}
+
+/* HOVER - Login/Sign Up */
+/* CHANGE COLOR ONCE PALETTE IS DECIDED */
+.loginsignup:hover {
+    color: blue;
+    transition: 0.5s;
+}
+
+/* login box */
+.loginform {
     width: 900px;
-    height: 650px;
+    height: 600px;
     margin: auto;
+    /* Aligns all items within the form <div> to the center */
+    text-align: center;
     padding: 0px 160px;
     border: 1px solid black;
     border-radius: 25px;
 }
 
-.login h1 {
+/* Sign Up box */
+.signupform {
+    width: 900px;
+    height: 800px;
+    margin: auto;
+    /* Aligns all items within the form <div> to the center */
+    text-align: center;
+    padding: 0px 160px;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+/* "Login" and "Create a New Account" text */
+.loginform h1, .signupform h1{
     font-size: 30px;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 60px;
 }
 
-.login .form input {
+/* Username, Password, and Email */
+.loginform input[type=text],
+.loginform input[type=password],
+.signupform input[type=text],
+.signupform input[type=email],
+.signupform input[type=password]{
     width: 100%;
     height: 100%;
-    padding: 10px 45px 20px 20px;
+    padding: 20px 45px 20px 20px;
     margin-top: 30px;
     border: 1px solid black;
+    transition: 0.5s;
 }
 
-.login .form button {
-    margin-top: 20px;
-}
-
-.login .hr {
-    margin-top: 30px;
-}
-
-.login .newaccount {
+/* Login and Sign Up button */
+.loginform input[type=button], .signupform input[type=button] {
     text-align: center;
+    width: 40%;
+    height: 100%;
+    padding: 20px 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 1px solid black;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+/* HOVER - Username, Password, and Email */
+.loginform input:hover, .signupform input:hover {
+    box-shadow: inset 0px 1.5px 6px #b1b1b1;
+    transition: 0.5s;
+}
+
+/* Separating lines */
+.hr {
     margin-top: 30px;
 }
 
+/* "Make a new account" and "Already have an account?" */
+.newaccount a, .alreadyhaveaccount a {
+    margin-top: 60px;
+    color: black;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+/* HOVER - "Make a new account" and "Already have an account?" */
+/* CHANGE COLOR ONCE PALETTE IS DECIDED */
+.newaccount a:hover, .alreadyhaveaccount a:hover{
+    color: blue;
+    transition: 0.5s;
+}

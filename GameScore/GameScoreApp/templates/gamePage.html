@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang ="en-ca">
 
+<a href="{% url 'index' %}">
 <img src="wireframe image.jpg" alt="GameScore-Logo" width="50" height="50">
 <h1> GameScore </h1> 
+</a>
 
 <!-- Contains a label form and button for a search bar-->
 <form> 
@@ -14,16 +16,28 @@
 <body> <label for="log/sign">Login/SignUp</label></body>
 
 
-<h1> Game Name: </h1>
+<h1>{{game.name}}</h1>
 <img src="wireframe image.jpg" alt="GameScore-Logo" width="250" height="200"> <br> 
 
-<body> Game Desription: Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> 
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+<body> Desription: <br>
+{{game.description}}
 
-
-    
- <h3> Overall Score: <br> X/10  <br> <br> 
-
+ <h3> Overall Score: <br> {{game.overallRating}}/10  <br> <br>
+     Reviews:
+     <br>
+        -------------------------------------
+{% for review in reviews %}
+     <br>
+    {{review.title}}
+    <br>
+    {{review.description}}
+    <br>
+     Score:{{review.score}}
+     <br>
+     -------------------------------------
+{% endfor %}
+     <br>
+     <br>
     Top Review: <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> 
     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam <br>
     <br>
@@ -35,7 +49,7 @@
     Followed Reviewers: <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> 
     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam <br>
     <br>
-
+ <h3>
 
 <!-- Contains labels and images for a featured game list -->
 <h2> Featured Game: 
@@ -157,7 +171,6 @@
             </li>
         </ul>
     </h3>
-    
 </body> 
     
 </html>

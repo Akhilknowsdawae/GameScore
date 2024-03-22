@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang ="en-ca">
 
-
+<a href="{% url 'index' %}">
 <img src="wireframe image.jpg" alt="GameScore-Logo" width="50" height="50">
 <h1> GameScore </h1>
+</a>
 
 <!-- Contains a lable, form and button for a search bar-->
 <form> 
     <label for="search">Search:</label> 
-    <input type="text" id="search" name="searchbar" placeholder="Search..."> 
+    <input type="text" id="search" name="searchbar" placeholder="Search...">
     <button type ="button">🔎</button>
 </form>
 <br> 
@@ -34,7 +35,9 @@ Indie Hits:
     </form>
 
     <ul>
-         <li> <img src="wireframe image.jpg" alt="Filler Game" width="140" height="75"> Game #1</li>
+        <a href="{% url 'gamePage' %}">
+         <li> <img src="wireframe image.jpg" alt="Filler Game" width="140" height="75"> {{game.name}}</li>
+        </a>
          <li> <img src="wireframe image.jpg" alt="Filler Game" width="140" height="75"> Game #2</li>
          <li> <img src="wireframe image.jpg" alt="Filler Game" width="140" height="75"> Game #3</li>
          <li> <img src="wireframe image.jpg" alt="Filler Game" width="140" height="75"> Game #4</li>

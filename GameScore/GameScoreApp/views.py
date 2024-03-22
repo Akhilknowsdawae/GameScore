@@ -4,11 +4,22 @@ from .models import Game, Review, UserReview
 
 
 def mainPage(request):
-    return render(request, 'HomePage.html')
+    game = Game.objects.get(id=1)
+    context = {
+        'game': game,
+    }
+    return render(request, 'homePage.html', context)
 
 
 def gamePage(request):
-    return render(request, 'GamePage.html')
+    game = Game.objects.get(id=1)
+    reviews = Review.objects.filter(gameID_id=game.id)
+    context = {
+        'game': game,
+        'reviews': reviews,
+    }
+
+    return render(request, 'gamePage.html', context)
 
 
 def gameReviewView(request):

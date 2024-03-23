@@ -1,8 +1,22 @@
+/* Colors */
+/* Gray: #5a6773 */
+/* Dark gray: #3e464e */
+/* Orange: #ff5d42 */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Muli';
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    background-color: #5a6773;
+    padding-bottom: 100px;
 }
 
 /* Header */
@@ -11,22 +25,30 @@
     text-align: center;
     align-items: center;
     width: 100%;
-    padding: 10px 0px;
-    margin-bottom: 40px;
+    padding-left: 30px;
+    margin-bottom: 50px;
 }
 
 .header img {
     margin-left: 40px;
+    padding-top: 20px;
 }
 
 .header h1 {
-    margin-left: 40px;
+    text-decoration: none;
+    color: black;
+    margin-left: 60px;
+}
+
+.header a:visited {
+    color: black;
+    text-decoration: none;
 }
 
 /* Searchbar */
 .searchbar input {
     position: relative;
-    margin-left: 1000px;
+    margin-left: 1100px;
     width: 400px;
     padding: 10px;
     border: 1px solid black;
@@ -47,7 +69,7 @@
 /* HOVER - Search icon  */
 /* CHANGE COLOR ONCE PALETTE IS DECIDED */
 .searchbar i:hover {
-    color: blue;
+    color: #ff5d42;
     transition: 0.5s;
 }
 
@@ -57,12 +79,18 @@
     margin-left: 25px;
     color: black;
     transition: 0.5s;
+    text-decoration: none;
+}
+
+.loginsignup:visited{
+    text-decoration: none;
+    color: black;
 }
 
 /* HOVER - Login/Sign Up */
 /* CHANGE COLOR ONCE PALETTE IS DECIDED */
 .loginsignup:hover {
-    color: blue;
+    color: #ff5d42;
     transition: 0.5s;
 }
 
@@ -76,6 +104,8 @@
     padding: 0px 160px;
     border: 1px solid black;
     border-radius: 25px;
+    background-color: #3e464e;
+    color: white;
 }
 
 /* Sign Up box */
@@ -88,6 +118,8 @@
     padding: 0px 160px;
     border: 1px solid black;
     border-radius: 25px;
+    background-color: #3e464e;
+    color: white;
 }
 
 /* "Login" and "Create a New Account" text */
@@ -109,6 +141,16 @@
     margin-top: 30px;
     border: 1px solid black;
     transition: 0.5s;
+    background-color: #ffffff;
+}
+
+/* Placeholder text for Username, Password, and Email */
+.loginform input[type=text]::placeholder,
+.loginform input[type=password]::placeholder,
+.signupform input[type=text]::placeholder,
+.signupform input[type=email]::placeholder,
+.signupform input[type=password]::placeholder{
+    color: black;
 }
 
 /* Login and Sign Up button */
@@ -120,32 +162,33 @@
     margin-top: 50px;
     margin-bottom: 50px;
     border: 1px solid black;
+    background-color: #ff5d42;
     border-radius: 25px;
     transition: 0.5s;
 }
 
 /* HOVER - Username, Password, and Email */
 .loginform input:hover, .signupform input:hover {
-    box-shadow: inset 0px 1.5px 6px #b1b1b1;
+    box-shadow: inset 0px 1.5px 6px #161616;
     transition: 0.5s;
 }
 
 /* Separating lines */
 .hr {
     margin-top: 30px;
+    color: black;
 }
 
 /* "Make a new account" and "Already have an account?" */
 .newaccount a, .alreadyhaveaccount a {
     margin-top: 60px;
-    color: black;
+    color: white;
     text-decoration: none;
     transition: 0.5s;
 }
 
 /* HOVER - "Make a new account" and "Already have an account?" */
-/* CHANGE COLOR ONCE PALETTE IS DECIDED */
 .newaccount a:hover, .alreadyhaveaccount a:hover{
-    color: blue;
+    color: #ff5d42;
     transition: 0.5s;
 }

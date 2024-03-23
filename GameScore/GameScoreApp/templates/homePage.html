@@ -1,14 +1,15 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang ="en-ca">
-<link rel="stylesheet" href="HomePageStyle.css">
-<<<<<<< Updated upstream:GameScore/GameScoreApp/templates/Homepage.html
-=======
+<link rel="stylesheet" href="{% static 'HomePageStyle.css' %}">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
->>>>>>> Stashed changes:GameScore/GameScoreApp/templates/homePage.html
 
+<a href="{% url 'index' %}">
+ <h1> <img src="{% static 'wireframe image.png' %}" alt="GameScore-Logo" width="50" height="50">
+ GameScore </h1>
+</a>
 
- <h1> <img src="wireframe image.png" alt="GameScore-Logo" width="50" height="50">
- GameScore 
 
  <div class= "topsearch">
  <h2>
@@ -18,47 +19,31 @@
     <input type="text" id="search" name="searchbar" placeholder="Search..."> 
     <button type ="button">🔎</button>
 </form>
-<br> 
-<body> <div class=log> <label for="log/sign" >Login/SignUp </label></body> </div>
+<br>
+     <a href="{% url 'login' %}">
+         <body> <div class=log> <label for="log/sign" >Login/SignUp </label></body>
+</a>
+
 </h2>
 </div>
-</h1>
-<<<<<<< Updated upstream:GameScore/GameScoreApp/templates/Homepage.html
+
 
 <!-- Contains labels and images for a featured game list -->
 <div class="featured">
-<h3> Featured Game: </h3> <br>
-<img src="wireframe image.png" alt="featured game" width="400" height="150"> <br> <br>
+    <a href="{% url 'gamePage' %}">
+        <h3> Featured Game: </h3> <br>
+<img src="{% static 'wireframe image.png' %}" alt="featured game" width="400" height="150"> <br> <br>
+</a>
 </div>
 
 <div class="Top"> 
-<img src="wireframe image.png" alt="Top Rated" width="400" height="150"> <br> <br>
+<img src="{% static 'wireframe image.png' %}" alt="Top Rated" width="400" height="150"> <br> <br>
 <h3> Top Rated: </h3> <br>
 </div>
 
 <div class="featured"> 
 <h3> Indie Hits: </h3> <br>
-<img src="wireframe image.png" alt="Indie Hits" width="400" height="150"> <br> <br>
-</div>
-
-</h3>
-=======
->>>>>>> Stashed changes:GameScore/GameScoreApp/templates/homePage.html
-
-<!-- Contains labels and images for a featured game list -->
-<div class="featured">
-<h3> Featured Game: </h3> <br>
-<img src="wireframe image.png" alt="featured game" width="400" height="150"> <br> <br>
-</div>
-
-<div class="Top"> 
-<img src="wireframe image.png" alt="Top Rated" width="400" height="150"> <br> <br>
-<h3> Top Rated: </h3> <br>
-</div>
-
-<div class="featured"> 
-<h3> Indie Hits: </h3> <br>
-<img src="wireframe image.png" alt="Indie Hits" width="400" height="150"> <br> <br>
+<img src="{% static 'wireframe image.png' %}" alt="Indie Hits" width="400" height="150"> <br> <br>
 </div>
 
 </h3>
@@ -73,17 +58,11 @@
     </form>
     
     <ul>
-<<<<<<< Updated upstream:GameScore/GameScoreApp/templates/Homepage.html
-         <li> <img src="wireframe image.png" alt="Filler Game" width="140" height="75"> Game #1 </li> <hr>   
-         <li> <img src="wireframe image.png" alt="Filler Game" width="140" height="75"> Game #2</li> <hr>
-         <li> <img src="wireframe image.png" alt="Filler Game" width="140" height="75"> Game #3</li> <hr>
-         <li> <img src="wireframe image.png" alt="Filler Game" width="140" height="75"> Game #4</li> <hr>
-=======
-         <li> <img src="wireframe image.png" alt="Filler Game" width="140" height="75"> <p> Game #1 <p> </li> <hr>   
-         <li> <img src="wireframe image.png" alt="Filler Game" width="140" height="75"> <p>Game #2</p> </li> <hr>
-         <li> <img src="wireframe image.png" alt="Filler Game" width="140" height="75"> <p> Game #3</p> </li> <hr>
-         <li> <img src="wireframe image.png" alt="Filler Game" width="140" height="75">  <p> Game #4</p> </li> <hr>
->>>>>>> Stashed changes:GameScore/GameScoreApp/templates/homePage.html
+
+         <li> <img src="{% static 'wireframe image.png' %}" alt="Filler Game" width="140" height="75"> <p> Game #1 <p> </li> <hr>
+         <li> <img src="{% static 'wireframe image.png' %}" alt="Filler Game" width="140" height="75"> <p>Game #2</p> </li> <hr>
+         <li> <img src="{% static 'wireframe image.png' %}" alt="Filler Game" width="140" height="75"> <p> Game #3</p> </li> <hr>
+         <li> <img src="{% static 'wireframe image.png' %}" alt="Filler Game" width="140" height="75">  <p> Game #4</p> </li> <hr>
     </ul>
 
 </h3>

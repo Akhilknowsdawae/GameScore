@@ -56,4 +56,4 @@ def login(request):
 
 
 def signUp(request):
-    return render(request, 'signUp.html')
+    return render(request, 'signup.html')

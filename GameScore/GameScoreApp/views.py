@@ -4,11 +4,22 @@ from .models import Game, Review, UserReview
 
 
 def mainPage(request):
-    return render(request, 'HomePage.html')
+    game = Game.objects.get(id=1)
+    context = {
+        'game': game,
+    }
+    return render(request, 'homePage.html', context)
 
 
 def gamePage(request):
-    return render(request, 'GamePage.html')
+    game = Game.objects.get(id=1)
+    reviews = Review.objects.filter(gameID_id=game.id)
+    context = {
+        'game': game,
+        'reviews': reviews,
+    }
+
+    return render(request, 'gamePage.html', context)
 
 
 def gameReviewView(request):
@@ -31,10 +42,18 @@ def submitReview(request):
 
     newReview.title = userInput.get('Title')
     newReview.description = userInput.get('Description')
-    newReview.score = 5
+    newReview.score = int(userInput.get('score'))
     newReview.gameID = Game.objects.get(id=1)
     newReview.userID = UserReview.objects.get(id=1)
 
     newReview.save()
 
-    return redirect('index')
+    return redirect('gamePage')
+
+
+def login(request):
+    return render(request, 'login.html')
+
+
+def signUp(request):
+    return render(request, 'signUp.html')

@@ -105,8 +105,8 @@ h2 {
 
 .searchList {
    font-size: 30px;
-   padding-left: 150px; 
-   padding-top: 20px;
+   padding-left: 80px; 
+
 }
 
 .searchList input {
@@ -123,13 +123,46 @@ h2 {
 .searchList li {
     list-style-type: none;
     display: flex; 
-    padding: 7px; 
+    padding: 2px; 
     text-align: center;
 }
 
 .searchList hr {
     
     border: 1px solid black; 
-    width: 75%
-
+    width: 160%;
+    
 }
+
+.searchList p {
+    
+    margin-left: 10px;
+    margin-top: 20px;
+    
+}
+
+.featureFilters {
+
+display: flex;
+margin-right: 300px;
+margin-left: 300px;
+background-color: grey; 
+border-width: 30px;
+justify-content: space-between;
+
+border: 3px solid black;
+padding: 50px;
+}
+
+.filters {
+    padding: 40px;
+    padding-right: 90px;
+    
+}
+
+
+
+.filters ul {
+    list-style-type: none;
+}
+

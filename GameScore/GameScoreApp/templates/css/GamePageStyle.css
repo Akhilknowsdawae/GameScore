@@ -48,7 +48,55 @@ h2 {
      
  }
 
+.featured {
+border: 5px solid black;
+background-color: rgb(164, 142, 202);
+border-radius: 20px;
+padding: 30px;
+padding-top: 10px; 
+padding-right:50px; 
+padding-bottom: 10px; 
+display: flex; 
+margin-left: 150px; 
+justify-content: space-between; 
+margin-right: 150px; 
+margin-bottom: 30px; 
+margin-top: 40px; 
 
+}
+
+.featured img {
+margin-left: 400px; 
+}
+
+.featured h3 {
+    font-size: 30px;
+    font-family:'Lucida Sans';
+   
+}
+
+.Top {
+    border: 5px solid black;
+background-color: rgb(164, 142, 202);
+border-radius: 20px;
+padding: 20px;
+padding-top: 10px; 
+padding-right:50px;  
+display: flex; 
+margin-left: 150px; 
+justify-content: space-between; 
+margin-right: 150px; 
+
+margin-top: 40px; 
+}
+
+.Top h3 {
+    margin-top: 40px;
+    margin-left: 250px;
+    font-size: 30px;
+    font-family:'Lucida Sans';
+   
+}
  
 .searchList {
     font-size: 30px;

@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-{% load static %}
 <html lang ="en-ca">
-<link rel="stylesheet" href="{% static 'GamePageStyle.css' %}">
+<link rel="stylesheet" href="GamePageStyle.css">
 
 <a href="{% url 'index' %}">
 <h1> 
-<img src="{% static 'wireframe image.png' %}" alt="GameScore-Logo" width="50" height="50">
+<img src="gamescore_logo_2.png" alt="GameScore-Logo" width="120" height="50">
 GameScore </h1> 
-</a>
-
+</a> 
 <!-- Contains a label form and button for a search bar-->
 <h1>
 <div class = "topsearch">
@@ -25,12 +23,32 @@ GameScore </h1>
 </div>
 
 <h1>{{game.name}}</h1>
-<img src="{% static 'wireframe image.png' %}" alt="GameScore-Logo" width="250" height="200"> <br>
+<div class="title"> 
+<img src="wireframe image.png" alt="GameScore-Logo" width="700" height="350"> <br> 
 
-<body> Desription: <br>
-{{game.description}}
+ <h3> Overall Score: <p>{{game.overallRating}}/10</p> <br>
 
- <h3> Overall Score: <br> {{game.overallRating}}/10  <br> <br>
+    Top Review: <br> <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam </p> 
+    <br>
+
+    Trusted Review: <br> <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam </p>
+    <br>
+
+    Followed Reviewers: <br> <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam </p> <br>
+    <br>
+ 
+
+ <div class="descript"> 
+  <h4> Desription: </h4>
+  <p> {{game.description}} </p>
+</div>
+
+</div>
+
+<div class="submitreview"> 
           <form action="{% url 'submitReview' %}" method="post">
 {% csrf_token %}
     <label for="Title">Title</label>
@@ -56,19 +74,8 @@ GameScore </h1>
     <input type="submit" value="Submit Review">
     </form>
      <br>
-     <br>
-
-    Top Review: <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> 
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam <br>
-    <br>
-
-    Trusted Review: <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> 
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam <br>
-    <br>
-
-    Followed Reviewers: <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> 
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam <br>
-    <br>
+     <br><br><br>
+    <div class="makereview"> 
      <br> Make a review for this game:
      <br>
          Reviews:
@@ -84,21 +91,29 @@ GameScore </h1>
      <br>
      -------------------------------------
 {% endfor %}
+</div>
      <br>
      <br>
  <h3>
 
+ </div>
+
 <!-- Contains labels and images for a featured game list -->
-<h2> Featured Game: 
-    <img src="{% static 'wireframe image.png' %}" alt="featured game" width="250" height="75"> <br> <br>
-    
-     Top Rated: 
-    <img src="{% static 'wireframe image.png' %}" alt="Top Rated" width="250" height="75"> <br> <br>
-    
+<div class = "featured"> 
+<h3> Featured Game: </h3> <br>
+    <img src="wireframe image.png" alt="featured game" width="250" height="75"> <br> <br>
+</div>
+
+<div class="Top">
+    <img src="wireframe image.png" alt="Top Rated" width="250" height="75"> <br> <br>
+     <h3> Top Rated: </h3> 
+</div>
+
+<div class="featured"> 
     Indie Hits:
-    <img src="{% static 'wireframe image.png' %}" alt="Indie Hits" width="250" height="75"> <br> <br>
-    
+    <img src="wireframe image.png" alt="Indie Hits" width="250" height="75"> <br> <br>
     </h2>
+</div>
     
     <div class = featureFilters>
     <!-- Creates a browse menu, with a search bar, elements in a list and search filters-->
@@ -110,10 +125,10 @@ GameScore </h1>
         </form>
     
         <ul>
-             <li> <img src="{% static 'wireframe image.png' %}" alt="Filler Game" width="140" height="75"> <p> Game #1 </p></li> <hr>
-             <li> <img src="{% static 'wireframe image.png' %}" alt="Filler Game" width="140" height="75"> <p> Game #2 </p></li> <hr>
-             <li> <img src="{% static 'wireframe image.png' %}" alt="Filler Game" width="140" height="75"> <p> Game #3 </p></li> <hr>
-             <li> <img src="{% static 'wireframe image.png' %}" alt="Filler Game" width="140" height="75"> <p> Game #4 </p></li> <hr>
+             <li> <img src="wireframe image.png" alt="Filler Game" width="140" height="75"> <p> Game #1 </p></li> <hr>
+             <li> <img src="wireframe image.png" alt="Filler Game" width="140" height="75"> <p> Game #2 </p></li> <hr>
+             <li> <img src="wireframe image.png" alt="Filler Game" width="140" height="75"> <p> Game #3 </p></li> <hr>
+             <li> <img src="wireframe image.png" alt="Filler Game" width="140" height="75"> <p> Game #4 </p></li> <hr>
         </ul>
     
     </h3>

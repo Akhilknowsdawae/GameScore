@@ -1,0 +1,118 @@
+body {
+    background-color: rgb(162, 162, 211);
+}
+
+h1 {
+    display: flex; 
+    align-items: center;
+    gap: 40px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+}
+
+h2 {
+    display: flex;
+    align-items: right;
+    gap: 20px; 
+    justify-content: space-between;
+}
+
+.topsearch {
+    position:absolute;
+    margin-bottom: 60px;
+    margin-right: 50px; 
+    align-items: center;
+    display: flex; 
+    font-size: 20px;
+    justify-content: space-between;
+    right: 0; 
+
+}
+.topsearch button {
+    border-radius: 30px;
+    font-size: 23px; 
+    background-color: rgb(221, 221, 221);
+ }
+ 
+ .topsearch button :hover{
+     background-color: rgb(117, 115, 115);
+  }
+ 
+ .topsearch input {
+     background-color: rgb(160, 160, 175);
+     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+     border-radius: 20px; 
+     width:300px;
+     font-size:20px;
+     padding: 5px 10px;
+     margin-left: 10px;
+     
+ }
+
+
+ 
+.searchList {
+    font-size: 30px;
+    padding-left: 80px; 
+ 
+ }
+ 
+ .searchList input {
+     background-color: rgb(160, 160, 175);
+     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+     border-radius: 20px; 
+     width:300px;
+     font-size:20px;
+     padding: 5px 10px;
+     margin-left: 10px;
+        
+ }
+ 
+ .searchList li {
+     list-style-type: none;
+     display: flex; 
+     padding: 2px; 
+     text-align: center;
+ }
+ 
+ .searchList hr {
+     
+     border: 1px solid black; 
+     width: 160%;
+     
+ }
+ 
+ .searchList p {
+     
+     margin-left: 10px;
+     margin-top: 20px;
+     
+ }
+ 
+ .log :hover {
+    text-decoration: underline;
+    }
+    
+
+
+.featureFilters {
+
+    display: flex;
+    margin-right: 300px;
+    margin-left: 300px;
+    background-color: grey; 
+    border-width: 30px;
+    justify-content: space-between;
+    border: 3px solid black;
+    padding: 50px;
+}
+
+.filters {
+    padding: 40px;
+    padding-right: 90px;
+    
+}
+
+.filters ul {
+    list-style-type: none;
+}
+

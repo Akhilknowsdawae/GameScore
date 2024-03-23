@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{game.name}}</title>
+</head>
+<body>
+{{game.name}}
+<br>
+{{game.name}}
+<br>
+<br>
+{% for review in reviews %}
+    {{review.title}}
+    <br>
+    {{review.description}}
+    <br>
+{% endfor %}
+<form action="{% url 'submitReview' %}" method="post">
+{% csrf_token %}
+    <label for="Title">Title</label>
+    <input id="Title" type="text" name="Title" value="">
+    <br>
+    <label for="Description">Description</label>
+    <input id="Description" type="text" name="Description" value="">
+    <br>
+    <br>
+    <input type="submit" value="Submit Review">
+    </form>
+</body>
+</html>

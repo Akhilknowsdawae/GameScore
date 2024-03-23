@@ -25,7 +25,6 @@ SECRET_KEY = 'django-insecure-f@91nmyu(7z(8n+$0m#6sinbn8w$7_0zm2rz=2=3zx#qa)(n2i
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
 ALLOWED_HOSTS = []
 
 
@@ -39,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'GameScoreApp.apps.GameScoreAppConfig',
-    'GameScore'
+    'GameScore',
 ]
 
 MIDDLEWARE = [

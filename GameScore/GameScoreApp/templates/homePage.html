@@ -1,53 +1,76 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang ="en-ca">
+<link rel="stylesheet" href="{% static 'HomePageStyle.css' %}">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <a href="{% url 'index' %}">
-<img src="wireframe image.jpg" alt="GameScore-Logo" width="50" height="50">
-<h1> GameScore </h1>
+ <h1> <img src="{% static 'wireframe image.png' %}" alt="GameScore-Logo" width="50" height="50">
+ GameScore </h1>
 </a>
 
+
+ <div class= "topsearch">
+ <h2>
 <!-- Contains a lable, form and button for a search bar-->
 <form> 
     <label for="search">Search:</label> 
-    <input type="text" id="search" name="searchbar" placeholder="Search...">
+    <input type="text" id="search" name="searchbar" placeholder="Search..."> 
     <button type ="button">🔎</button>
 </form>
 <br>
-<a href="{% url 'login' %}">
-    <label for="log/sign">Login/SignUp</label>
+     <a href="{% url 'login' %}">
+         <body> <div class=log> <label for="log/sign" >Login/SignUp </label></body>
 </a>
-<!-- Contains labels and images for a featured game list -->
-<h2> Featured Game: 
-<img src="wireframe image.jpg" alt="featured game" width="250" height="75"> <br> <br>
-
- Top Rated: 
-<img src="wireframe image.jpg" alt="Top Rated" width="250" height="75"> <br> <br>
-
-Indie Hits:
-<img src="wireframe image.jpg" alt="Indie Hits" width="250" height="75"> <br> <br>
 
 </h2>
+</div>
 
+
+<!-- Contains labels and images for a featured game list -->
+<div class="featured">
+    <a href="{% url 'gamePage' %}">
+        <h3> Featured Game: </h3> <br>
+<img src="{% static 'wireframe image.png' %}" alt="featured game" width="400" height="150"> <br> <br>
+</a>
+</div>
+
+<div class="Top"> 
+<img src="{% static 'wireframe image.png' %}" alt="Top Rated" width="400" height="150"> <br> <br>
+<h3> Top Rated: </h3> <br>
+</div>
+
+<div class="featured"> 
+<h3> Indie Hits: </h3> <br>
+<img src="{% static 'wireframe image.png' %}" alt="Indie Hits" width="400" height="150"> <br> <br>
+</div>
+
+</h3>
+
+<div class = featureFilters> 
 <!-- Creates a browse menu, with a search bar, elements in a list and search filters-->
+<div class = "searchList"> 
 <h3> 
     <form> 
     <label for="search">Search:</label> 
     <input type="text" id="search2" name="searchbar" placeholder="Search..."> 
     </form>
-
+    
     <ul>
-        <a href="{% url 'gamePage' %}">
-         <li> <img src="wireframe image.jpg" alt="Filler Game" width="140" height="75"> {{game.name}}</li>
-        </a>
-         <li> <img src="wireframe image.jpg" alt="Filler Game" width="140" height="75"> Game #2</li>
-         <li> <img src="wireframe image.jpg" alt="Filler Game" width="140" height="75"> Game #3</li>
-         <li> <img src="wireframe image.jpg" alt="Filler Game" width="140" height="75"> Game #4</li>
+
+         <li> <img src="{% static 'wireframe image.png' %}" alt="Filler Game" width="140" height="75"> <p> Game #1 <p> </li> <hr>
+         <li> <img src="{% static 'wireframe image.png' %}" alt="Filler Game" width="140" height="75"> <p>Game #2</p> </li> <hr>
+         <li> <img src="{% static 'wireframe image.png' %}" alt="Filler Game" width="140" height="75"> <p> Game #3</p> </li> <hr>
+         <li> <img src="{% static 'wireframe image.png' %}" alt="Filler Game" width="140" height="75">  <p> Game #4</p> </li> <hr>
     </ul>
 
 </h3>
+</div>
 
+<div class="filters"> 
 <h3> 
-    Filters: 
+   Filters: 
     <ul>
         <li> Genre
             <form>
@@ -138,6 +161,8 @@ Indie Hits:
         </li>
     </ul>
 </h3>
+</div>
+</div>
 
 </body> 
 

@@ -1,12 +1,17 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang ="en-ca">
+<link rel="stylesheet" href="{% static 'GamePageStyle.css' %}">
 
 <a href="{% url 'index' %}">
-<img src="wireframe image.jpg" alt="GameScore-Logo" width="50" height="50">
-<h1> GameScore </h1> 
+<h1> 
+<img src="{% static 'wireframe image.png' %}" alt="GameScore-Logo" width="50" height="50">
+GameScore </h1> 
 </a>
 
 <!-- Contains a label form and button for a search bar-->
+<h1>
+<div class = "topsearch">
 <form> 
     <label for="search">Search:</label> 
     <input type="text" id="search" name="searchbar" autocomplete = "" placeholder="Search..."> 
@@ -16,9 +21,11 @@
 <a href="{% url 'login' %}">
     <label for="log/sign">Login/SignUp</label>
 </a>
+</h1>
+</div>
 
 <h1>{{game.name}}</h1>
-<img src="wireframe image.jpg" alt="GameScore-Logo" width="250" height="200"> <br> 
+<img src="{% static 'wireframe image.png' %}" alt="GameScore-Logo" width="250" height="200"> <br>
 
 <body> Desription: <br>
 {{game.description}}
@@ -83,17 +90,19 @@
 
 <!-- Contains labels and images for a featured game list -->
 <h2> Featured Game: 
-    <img src="wireframe-image.jpg" alt="featured game" width="250" height="75"> <br> <br>
+    <img src="{% static 'wireframe image.png' %}" alt="featured game" width="250" height="75"> <br> <br>
     
      Top Rated: 
-    <img src="wireframe-image.jpg" alt="Top Rated" width="250" height="75"> <br> <br>
+    <img src="{% static 'wireframe image.png' %}" alt="Top Rated" width="250" height="75"> <br> <br>
     
     Indie Hits:
-    <img src="wireframe-image.jpg" alt="Indie Hits" width="250" height="75"> <br> <br>
+    <img src="{% static 'wireframe image.png' %}" alt="Indie Hits" width="250" height="75"> <br> <br>
     
     </h2>
     
+    <div class = featureFilters>
     <!-- Creates a browse menu, with a search bar, elements in a list and search filters-->
+    <div class = "searchList">
     <h3> 
         <form> 
         <label for="search">Search:</label> 
@@ -101,13 +110,14 @@
         </form>
     
         <ul>
-             <li> <img src="wireframe-image.jpg" alt="Filler Game" width="140" height="75"> Game #1</li>
-             <li> <img src="wireframe-image.jpg" alt="Filler Game" width="140" height="75"> Game #2</li>
-             <li> <img src="wireframe-image.jpg" alt="Filler Game" width="140" height="75"> Game #3</li>
-             <li> <img src="wireframe-image.jpg" alt="Filler Game" width="140" height="75"> Game #4</li>
+             <li> <img src="{% static 'wireframe image.png' %}" alt="Filler Game" width="140" height="75"> <p> Game #1 </p></li> <hr>
+             <li> <img src="{% static 'wireframe image.png' %}" alt="Filler Game" width="140" height="75"> <p> Game #2 </p></li> <hr>
+             <li> <img src="{% static 'wireframe image.png' %}" alt="Filler Game" width="140" height="75"> <p> Game #3 </p></li> <hr>
+             <li> <img src="{% static 'wireframe image.png' %}" alt="Filler Game" width="140" height="75"> <p> Game #4 </p></li> <hr>
         </ul>
     
     </h3>
+</div>
     
     <h3> 
         Filters: 
@@ -201,6 +211,7 @@
             </li>
         </ul>
     </h3>
+</div>
 </body> 
     
 </html>

@@ -7,11 +7,27 @@ It provides in-depth reviews, community-driver ratings, and a platform for discu
 
 
 **Current Application State:**
-![image](https://github.com/Akhilknowsdawae/GameScore/assets/22270009/11bb7bc5-d868-46bc-a87c-3cb93b956ef4)
+Home page:
+![image](https://github.com/Akhilknowsdawae/GameScore/assets/22270009/8109f004-93c9-4839-b335-1546929cbd95)
+![image](https://github.com/Akhilknowsdawae/GameScore/assets/22270009/1ae383d5-1527-4967-ab10-25c1974d4844)
+
+Game page:
+![image](https://github.com/Akhilknowsdawae/GameScore/assets/22270009/96590251-6973-491d-ac76-fe015fbe7241)
+![image](https://github.com/Akhilknowsdawae/GameScore/assets/22270009/38c50847-fa46-41bc-8fd0-6a37da2d0ac7)
+![image](https://github.com/Akhilknowsdawae/GameScore/assets/22270009/48622510-d10c-47bc-9ab6-6427b637dc8f)
+
+Login page:
+![image](https://github.com/Akhilknowsdawae/GameScore/assets/22270009/0ff747af-a488-4c76-a287-8d1dee415006)
+
+Sign up page:
+![image](https://github.com/Akhilknowsdawae/GameScore/assets/22270009/2357e268-331d-4ac2-8eb7-9be1fcf9d37a)
 
 
 **Features Done:** 
-- None as of Sprint 1
+- Review and Rating System:
+  - Ability for users to submit reviews for games.
+  - Rating system for users to rate games.
+  - Display of average ratings and user reviews on game pages.
 
 **Features Not Yet Done:** 
 - User Authentication System:
@@ -26,10 +42,7 @@ It provides in-depth reviews, community-driver ratings, and a platform for discu
   - Intuitive and user-friendly interface design.
   - Consistent layout and navigation across pages.
   - Incorporation of branding elements and visual aesthetics.
-- Review and Rating System:
-  - Ability for users to submit reviews for games.
-  - Rating system for users to rate games.
-  - Display of average ratings and user reviews on game pages.
+  - Website responsiveness for mobile and various screens sizes.
 - Search and Filter Functionality:
   - Search bar for users to search for specific games.
   - Filter options to narrow down game search results (e.g., by genre, platform, release date).

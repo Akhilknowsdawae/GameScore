@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang ="en-ca">
-<link rel="stylesheet" href="GamePageStyle.css">
+{% load static %}
+<link rel="stylesheet" href="{% static 'GamePageStyle.css' %}">
 
 <a href="{% url 'index' %}">
 <h1> 
-<img src="gamescore_logo_2.png" alt="GameScore-Logo" width="120" height="50">
+<img src="{% static 'gamescore_logo_2.png' %}" alt="GameScore-Logo" width="120" height="50">
 GameScore </h1> 
 </a> 
 <!-- Contains a label form and button for a search bar-->

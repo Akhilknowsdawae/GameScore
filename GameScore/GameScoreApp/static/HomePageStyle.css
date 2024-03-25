@@ -1,5 +1,6 @@
 body {
-    background-color: rgb(162, 162, 211);
+    background-color: #3e464e;
+    color: white;
 }
 
 h1 {
@@ -23,7 +24,7 @@ h1 {
 
 .featured {
 border: 5px solid black;
-background-color: rgb(164, 142, 202);
+    background-color: #234263;
 border-radius: 20px;
 padding: 30px;
 padding-top: 10px; 
@@ -50,7 +51,7 @@ margin-left: 400px;
 
 .Top {
     border: 5px solid black;
-background-color: rgb(164, 142, 202);
+    background-color: #3e464e;
 border-radius: 20px;
 padding: 20px;
 padding-top: 10px; 
@@ -98,7 +99,7 @@ text-decoration: underline;
 
 h2 {
     display: flex;
-    align-items: r;
+    align-items: flex-start;
     gap: 20px; 
     justify-content: space-between;
 }
@@ -129,7 +130,7 @@ h2 {
 
 .searchList hr {
     
-    border: 1px solid black; 
+    border: 1px #FF5D42;;
     width: 160%;
     
 }
@@ -150,7 +151,7 @@ background-color: grey;
 border-width: 30px;
 justify-content: space-between;
 
-border: 3px solid black;
+    border-color:#FF5D42;
 padding: 50px;
 }
 

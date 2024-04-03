@@ -25,10 +25,11 @@ body {
     padding-top: 20px;
 }
 
-.header h1 {
+h1 {
     text-decoration: none;
-    color: black;
-    margin-left: 60px;
+    color: white;
+    margin-left: 180px;
+    font-family: 'Muli';
 }
 
 .header a:visited {
@@ -39,7 +40,7 @@ body {
 /* Searchbar */
 .searchbar input {
     position: relative;
-    margin-left: 1100px;
+    margin-left: 1030px;
     width: 400px;
     padding: 10px;
     border: 1px solid black;
@@ -55,6 +56,11 @@ body {
     margin-top: 10px;
     cursor: pointer;
     transition: 0.5s;
+}
+
+.featureFilters i {
+    color: black;
+    margin-top: 17px;
 }
 
 /* HOVER - Search icon  */
@@ -99,9 +105,14 @@ h2 {
 }
 
 .title {
+
     display: flex;
     background-color: #3e464e;
-    margin-left: 50px;
+   width: 1500px;
+   height: 700px;
+    margin: auto;
+     border-radius: 25px;
+    border: 1px solid black;
 }
 
 .title h3 {
@@ -121,29 +132,27 @@ h2 {
     color: white; 
     font-size: 30px;
     margin-left: -750px;
-   margin-top: -200px;
+   margin-top: -300px;
     
 }
 
 .submitreview {
-    margin-top: 50px;
-    margin-left: 100px; 
+    margin: auto;
+    width: 800px;
+    height: 200px;
     display: flex;
-    padding: 100px;
-    padding-bottom: 400px; 
+    padding: 0px 160px;
+    margin-top: 80px;
+    text-align: center;
     justify-content: center;
     color:white; 
     font-size: 30px;
-   
+   border: 1px solid black;
+    border-radius: 25px;
     background-color: #3e464e;
-}
-
-.makereview {
-    position: absolute; 
-    margin-top: 150px; 
 
 }
- 
+
 .searchList {
     font-size: 30px;
     padding-left: 80px; 
@@ -151,7 +160,7 @@ h2 {
  }
  
  .searchList input {
-     background-color: rgb(160, 160, 175);
+     background-color: white;
      border-radius: 20px; 
      width:300px;
      font-size:20px;
@@ -187,15 +196,26 @@ h2 {
     
 
 .featureFilters {
-
-    display: flex;
-    margin-right: 300px;
-    margin-left: 300px;
-    background-color: #3e464e; 
-    border-width: 30px;
+display: flex;
     justify-content: space-between;
-    border: 3px solid black;
-    padding: 50px;
+    color: white;
+display: flex;
+width: 870px;
+    height: 850px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+background-color: #3e464e;
+border-width: 30px;
+justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: #3e464e;
+padding: 50px;
+}
+
+.searchList h3 {
+    margin-right: 100px;
 }
 
 .filters {
@@ -208,3 +228,30 @@ h2 {
     list-style-type: none;
 }
 
+.makereview p {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.rev {
+
+   border: 1px solid black;
+    border-radius: 25px;
+    background-color: #3e464e;
+    margin: auto;
+    width: 1000px;
+    height: 100px;
+    margin-top: 20px;
+    text-align: left;
+    color:white;
+    font-size: 15px;
+    font-family: 'Muli';
+
+}
+
+.rev p {
+    margin-left: 30px;
+    margin-bottom: 10px;
+
+}

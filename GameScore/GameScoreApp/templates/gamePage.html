@@ -31,8 +31,8 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 </header>
 
 <h1>{{game.name}}</h1>
-<div class="title"> 
-<img src="wireframe image.png" alt="GameScore-Logo" width="700" height="350"> <br> 
+<div class="title">
+<img src="{% static 'wireframe image.png' %}" alt="Filler Game" width="700" height="350"> <br>
 
  <h3> Overall Score: <p>{{game.overallRating}}/10</p> <br>
 
@@ -59,6 +59,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <div class="submitreview"> 
           <form action="{% url 'submitReview' %}" method="post">
+              Make a review for this game: <br>
 {% csrf_token %}
     <label for="Title">Title</label>
     <input id="Title" type="text" name="Title" value="">
@@ -82,31 +83,38 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
         </select>
     <input type="submit" value="Submit Review">
     </form>
+
+    </div>
+    <div class="makereview">
      <br>
-     <br><br><br>
-    <div class="makereview"> 
-     <br> Make a review for this game:
      <br>
-         Reviews:
+         <p> Reviews: </p>
      <br>
-        -------------------------------------
+        <!-- ------------------------------------- !-->
+
+        </div>
+        <!-- this is where the reviews start!-->
 {% for review in reviews %}
-     <br>
+
+<div class = rev>
+    <p>
     {{review.title}}
     <br>
      Score: {{review.score}}
     <br>
      {{review.description}}
-     <br>
-     -------------------------------------
-{% endfor %}
+    </p>
+
 </div>
+     <!-- ------------------------------------- !-->
+{% endfor %}
+
      <br>
      <br>
 
- </div>
 
 <!-- Contains labels and images for a featured game list -->
+<!--
 <div class = "featured"> 
 <h3> Featured Game: </h3> <br>
     <img src="wireframe image.png" alt="featured game" width="250" height="75"> <br> <br>
@@ -121,16 +129,16 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
     Indie Hits:
     <img src="wireframe image.png" alt="Indie Hits" width="250" height="75"> <br> <br>
     </h2>
-</div>
+</div> !-->
     
     <div class = featureFilters>
     <!-- Creates a browse menu, with a search bar, elements in a list and search filters-->
     <div class = "searchList">
     <h3> 
-        <form> 
-        <label for="search">Search:</label> 
-        <input type="text" id="search2" name="searchbar" placeholder="Search..."> 
-        </form>
+        <div class="searchbar">
+    <input type="text" id="search2" name="searchbar" placeholder="Search...">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
     
         <ul>
              <li> <img src="{% static 'wireframe image.png' %}" alt="Filler Game" width="140" height="75"> <p> Game #1 </p></li> <hr>

@@ -1,14 +1,90 @@
 body {
     background-color: #5a6773;
 }
-
-h1 {
-    display: flex; 
-    align-items: center;
-    gap: 40px;
-    color: white; 
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+* {
+    box-sizing: border-box;
+    font-family: 'Muli';
 }
+
+*:focus {
+    outline: none;
+}
+
+/* Header */
+.header {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    padding-left: 30px;
+    margin-bottom: 50px;
+}
+
+.header img {
+    margin-left: 40px;
+    padding-top: 20px;
+}
+
+.header h1 {
+    text-decoration: none;
+    color: black;
+    margin-left: 60px;
+}
+
+.header a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+/* Searchbar */
+.searchbar input {
+    position: relative;
+    margin-left: 1100px;
+    width: 400px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+/* Search icon */
+.searchbar i {
+    position: absolute;
+    font-size: 20px;
+    margin-left: -40px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/* HOVER - Search icon  */
+/* CHANGE COLOR ONCE PALETTE IS DECIDED */
+.searchbar i:hover {
+    color: #ff5d42;
+    transition: 0.5s;
+}
+
+/* Login/Sign Up text */
+.loginsignup {
+    font-size: 20px;
+    margin-left: 25px;
+    color: black;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.loginsignup:visited{
+    text-decoration: none;
+    color: black;
+}
+
+/* HOVER - Login/Sign Up */
+/* CHANGE COLOR ONCE PALETTE IS DECIDED */
+.loginsignup:hover {
+    color: #ff5d42;
+    transition: 0.5s;
+}
+
 
 h2 {
     display: flex;
@@ -17,44 +93,9 @@ h2 {
     justify-content: space-between;
 }
 
-.topsearch {
-    position:absolute;
-    margin-bottom: 60px;
-    margin-right: 50px; 
-    align-items: center;
-    display: flex; 
-    font-size: 20px;
-    justify-content: space-between;
-    right: 0; 
-
-}
-.topsearch button {
-    border-radius: 30px;
-    font-size: 23px; 
-    background-color: #3e464e;
-    border-color:#FF5D42;
- }
- 
- .topsearch button :hover{
-     background-color: #3e464e;
-     border-color:#FF5D42; 
-  }
- 
- .topsearch input {
-     background-color: #3e464e;
-     border-color: #FF5D42;
-     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-     border-radius: 20px; 
-     width:300px;
-     font-size:20px;
-     padding: 5px 10px;
-     margin-left: 10px;
-     
- }
-
 .title img {
     margin-left: 50px;
-    margin-top: 50px; 
+    margin-top: 50px;
 }
 
 .title {
@@ -66,7 +107,6 @@ h2 {
 .title h3 {
     padding: 30px;
     margin-left: 50px;
-    font-family:'Lucida Sans';
     font-size: 30px;
     color: white; 
 }
@@ -94,7 +134,6 @@ h2 {
     justify-content: center;
     color:white; 
     font-size: 30px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
    
     background-color: #3e464e;
 }
@@ -113,7 +152,6 @@ h2 {
  
  .searchList input {
      background-color: rgb(160, 160, 175);
-     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
      border-radius: 20px; 
      width:300px;
      font-size:20px;

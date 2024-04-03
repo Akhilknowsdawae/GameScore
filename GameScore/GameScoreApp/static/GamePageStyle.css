@@ -58,6 +58,11 @@ h1 {
     transition: 0.5s;
 }
 
+.featureFilters i {
+    color: black;
+    margin-top: 17px;
+}
+
 /* HOVER - Search icon  */
 /* CHANGE COLOR ONCE PALETTE IS DECIDED */
 .searchbar i:hover {
@@ -134,17 +139,18 @@ h2 {
 .submitreview {
     margin: auto;
     width: 800px;
-    height: 30px;
+    height: 200px;
     display: flex;
     padding: 0px 160px;
     margin-top: 80px;
-    padding-bottom: 400px; 
+    text-align: center;
     justify-content: center;
     color:white; 
     font-size: 30px;
    border: 1px solid black;
     border-radius: 25px;
     background-color: #3e464e;
+
 }
 
 .searchList {
@@ -154,7 +160,7 @@ h2 {
  }
  
  .searchList input {
-     background-color: rgb(160, 160, 175);
+     background-color: white;
      border-radius: 20px; 
      width:300px;
      font-size:20px;
@@ -190,15 +196,26 @@ h2 {
     
 
 .featureFilters {
-
-    display: flex;
-    margin-right: 300px;
-    margin-left: 300px;
-    background-color: #3e464e; 
-    border-width: 30px;
+display: flex;
     justify-content: space-between;
-    border: 3px solid black;
-    padding: 50px;
+    color: white;
+display: flex;
+width: 870px;
+    height: 850px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+background-color: #3e464e;
+border-width: 30px;
+justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: #3e464e;
+padding: 50px;
+}
+
+.searchList h3 {
+    margin-right: 100px;
 }
 
 .filters {
@@ -215,7 +232,6 @@ h2 {
     color: white;
     text-align: center;
     font-size: 30px;
-    background-color: #ff5d42; 
 }
 
 .rev {

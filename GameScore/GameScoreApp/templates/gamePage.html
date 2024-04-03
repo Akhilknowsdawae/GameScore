@@ -114,6 +114,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 <!-- Contains labels and images for a featured game list -->
+<!--
 <div class = "featured"> 
 <h3> Featured Game: </h3> <br>
     <img src="wireframe image.png" alt="featured game" width="250" height="75"> <br> <br>
@@ -128,16 +129,16 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
     Indie Hits:
     <img src="wireframe image.png" alt="Indie Hits" width="250" height="75"> <br> <br>
     </h2>
-</div>
+</div> !-->
     
     <div class = featureFilters>
     <!-- Creates a browse menu, with a search bar, elements in a list and search filters-->
     <div class = "searchList">
     <h3> 
-        <form> 
-        <label for="search">Search:</label> 
-        <input type="text" id="search2" name="searchbar" placeholder="Search..."> 
-        </form>
+        <div class="searchbar">
+    <input type="text" id="search2" name="searchbar" placeholder="Search...">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
     
         <ul>
              <li> <img src="{% static 'wireframe image.png' %}" alt="Filler Game" width="140" height="75"> <p> Game #1 </p></li> <hr>

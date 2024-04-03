@@ -104,7 +104,7 @@ font-size: 30px;
 
 .featured img {
 margin-left: 600px;
-    margin-bottom: 70px;
+    margin-top: 20px;
 
 }
 
@@ -122,6 +122,10 @@ width:1100px;
     margin-left: 200px;
 font-size: 30px;
 
+}
+
+.Top img {
+    margin-top: 20px;
 }
 
 .Top h3 {
@@ -150,7 +154,7 @@ h2 {
 }
 
 .searchList input {
-    background-color: rgb(160, 160, 175);
+    background-color: white;
     font-family: "Muli";
     border-radius: 20px; 
     width:300px;
@@ -167,10 +171,10 @@ h2 {
     text-align: center;
 }
 
- hr {
+ .searchList hr {
     
-    border: 5px white;
-    width: 160%;
+    border: 1px white;
+    width: 500%;
     
 }
 
@@ -181,8 +185,14 @@ h2 {
     
 }
 
-.featureFilters {
+.filters h3, .searchList p {
+color: white;
+}
 
+.featureFilters i {
+    margin-top: 17px;
+}
+.featureFilters {
 display: flex;
 width: 870px;
     height: 850px;

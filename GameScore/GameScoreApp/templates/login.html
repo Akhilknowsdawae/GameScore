@@ -23,7 +23,9 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
     </div>
     <br>
     <!-- CHANGE SO ON CLICK THIS LEADS TO LOGIN/SIGN UP PAGE -->
-    <div class="loginsignup"><label for="log/sign">Sign Up</label></div>
+     <a href="{% url 'signUp' %}">
+    <div class="loginsignup"><label id="signup" for="signup"> Sign Up</label></div>
+     </a>
 </header>
 
 <body>

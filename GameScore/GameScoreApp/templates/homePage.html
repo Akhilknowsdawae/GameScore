@@ -34,8 +34,9 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 <!-- Contains labels and images for a featured game list -->
 <div class="featured">
     <a href="{% url 'gamePage' %}">
-        <h3> Featured Game: </h3> <br>
+        <h3> Featured Game: <br>
 <img src="{% static 'wireframe image.png' %}" alt="featured game" width="400" height="150"> <br> <br>
+            </h3>
 </a>
 </div>
 
@@ -45,7 +46,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 </div>
 
 <div class="featured"> 
-<h3> Indie Hits: </h3> <br>
+<h3> Indie Hits: </h3>
 <img src="{% static 'wireframe image.png' %}" alt="Indie Hits" width="400" height="150"> <br> <br>
 </div>
 
@@ -60,13 +61,12 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
     <input type="text" id="search2" name="searchbar" placeholder="Search..."> 
     </form>
     
-    <ul>
-
-         <li> <img src="{% static 'wireframe image.png' %}" alt="Filler Game" width="140" height="75"> <p> Game #1 </p> </li> <hr>
-         <li> <img src="{% static 'wireframe image.png' %}" alt="Filler Game" width="140" height="75"> <p>Game #2</p> </li> <hr>
-         <li> <img src="{% static 'wireframe image.png' %}" alt="Filler Game" width="140" height="75"> <p> Game #3</p> </li> <hr>
-         <li> <img src="{% static 'wireframe image.png' %}" alt="Filler Game" width="140" height="75">  <p> Game #4</p> </li> <hr>
-    </ul>
+   <ul>
+       <li> <img src="{% static 'wireframe image.png' %}" alt="Filler Game" width="140" height="75"> <p> Game #1 </p> </li> <br> <hr>
+       <li> <img src="{% static 'wireframe image.png' %}" alt="Filler Game" width="140" height="75"> <p> Game #2 </p></li> <hr>
+       <li> <img src="{% static 'wireframe image.png' %}" alt="Filler Game" width="140" height="75"> <p> Game #3 </p></li> <hr>
+       <li> <img src="{% static 'wireframe image.png' %}" alt="Filler Game" width="140" height="75"> <p> Game #4 </p></li> <hr>
+   </ul>
 
 </h3>
 </div>

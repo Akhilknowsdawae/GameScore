@@ -133,8 +133,8 @@ h2 {
 
 .submitreview {
     margin: auto;
-    width: 1500px;
-    height: 700px;
+    width: 800px;
+    height: 30px;
     display: flex;
     padding: 0px 160px;
     margin-top: 80px;
@@ -147,12 +147,6 @@ h2 {
     background-color: #3e464e;
 }
 
-.makereview {
-    position: absolute; 
-    margin-top: 150px; 
-
-}
- 
 .searchList {
     font-size: 30px;
     padding-left: 80px; 
@@ -217,6 +211,31 @@ h2 {
     list-style-type: none;
 }
 
-h5 {
-    /* background-color: red; */
+.makereview p {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    background-color: #ff5d42; 
+}
+
+.rev {
+
+   border: 1px solid black;
+    border-radius: 25px;
+    background-color: #3e464e;
+    margin: auto;
+    width: 1000px;
+    height: 100px;
+    margin-top: 20px;
+    text-align: left;
+    color:white;
+    font-size: 15px;
+    font-family: 'Muli';
+
+}
+
+.rev p {
+    margin-left: 30px;
+    margin-bottom: 10px;
+
 }

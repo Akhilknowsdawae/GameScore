@@ -59,6 +59,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <div class="submitreview"> 
           <form action="{% url 'submitReview' %}" method="post">
+              Make a review for this game: <br>
 {% csrf_token %}
     <label for="Title">Title</label>
     <input id="Title" type="text" name="Title" value="">
@@ -82,31 +83,35 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
         </select>
     <input type="submit" value="Submit Review">
     </form>
+
+    </div>
+    <div class="makereview">
      <br>
-     <br><br><br>
-    <div class="makereview"> 
-     <br> Make a review for this game:
      <br>
-         Reviews:
+         <p> Reviews: </p>
      <br>
-        -------------------------------------
+        <!-- ------------------------------------- !-->
+
+        </div>
+        <!-- this is where the reviews start!-->
 {% for review in reviews %}
-        <h5>
-     <br>
+
+<div class = rev>
+    <p>
     {{review.title}}
     <br>
      Score: {{review.score}}
     <br>
      {{review.description}}
-     <br>
-            </h5>
-     -------------------------------------
-{% endfor %}
+    </p>
+
 </div>
+     <!-- ------------------------------------- !-->
+{% endfor %}
+
      <br>
      <br>
 
- </div>
 
 <!-- Contains labels and images for a featured game list -->
 <div class = "featured"> 

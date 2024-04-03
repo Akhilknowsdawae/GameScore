@@ -31,8 +31,8 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 </header>
 
 <h1>{{game.name}}</h1>
-<div class="title"> 
-<img src="wireframe image.png" alt="GameScore-Logo" width="700" height="350"> <br> 
+<div class="title">
+<img src="{% static 'wireframe image.png' %}" alt="Filler Game" width="700" height="350"> <br>
 
  <h3> Overall Score: <p>{{game.overallRating}}/10</p> <br>
 
@@ -91,6 +91,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
      <br>
         -------------------------------------
 {% for review in reviews %}
+        <h5>
      <br>
     {{review.title}}
     <br>
@@ -98,6 +99,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
     <br>
      {{review.description}}
      <br>
+            </h5>
      -------------------------------------
 {% endfor %}
 </div>

@@ -15,7 +15,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
     <img src="{% static 'gamescore_logo_2.png' %}" alt="GameScore Logo" width="100%" height="100%">
     <!-- <h1> GameScore </h1> -->
     </a>
-    <!-- Contains a lable, form and button for a search bar-->
+    <!-- Contains a label, form and button for a search bar-->
     <div class="searchbar">
         <input type="text" id="search" name="searchbar" autocomplete = "" placeholder="Search...">
         <i class="fa-solid fa-magnifying-glass"></i>
@@ -23,7 +23,9 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
     </div>
     <br>
     <!-- CHANGE SO ON CLICK THIS LEADS TO LOGIN/SIGN UP PAGE -->
-    <div class="loginsignup"><label for="log/sign">Sign Up</label></div>
+     <a href="{% url 'signUp' %}">
+    <div class="loginsignup"><label id="signup" for="signup"> Sign Up</label></div>
+     </a>
 </header>
 
 <body>

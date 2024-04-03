@@ -18,10 +18,10 @@ GameScore </h1>
 </form>
 <br>
 <a href="{% url 'login' %}">
-    <label for="log/sign">Login/SignUp</label>
+    <label >Login/SignUp</label>
 </a>
-</h1>
 </div>
+    </h1>
 
 <h1>{{game.name}}</h1>
 <div class="title"> 
@@ -138,94 +138,94 @@ GameScore </h1>
     <h3> 
         Filters: 
         <ul>
-            <li> Genre
-                <form>
-                    <input type="checkbox" id="Action" name="Action" value="Action">
-                    <label for="Action"> Action </label> <br>
-                    
-                    <input type="checkbox" id="Action" name="Action" value="Action">
-                    <label for="Action"> Adventure </label> <br>
+        <li> Genre
+            <form>
+                <input type="checkbox" id="genre1" name="Action" value="Action">
+                <label for="genre1"> Action </label> <br>
 
-                    <input type="checkbox" id="Action" name="Action" value="Action">
-                    <label for="Action"> Fighting</label> <br>
+                <input type="checkbox" id="genre2" name="Adv" value="Action">
+                <label for="genre2"> Adventure </label> <br>
 
-                    <input type="checkbox" id="Action" name="Action" value="Action">
-                    <label for="Action"> Platformer</label> <br>
+                <input type="checkbox" id="genre3" name="Action" value="Action">
+                <label for="genre3"> Fighting</label> <br>
 
-                </form> <br>
+                <input type="checkbox" id="genre4" name="Action" value="Action">
+                <label for="genre4"> Platformer</label> <br>
 
-            </li>
+            </form> <br>
 
-            <li> Company 
-                <form> 
-                    <input type="radio" id="html" name="company" value="Any">
-                    <label for="Nintendo">Any</label> <br>
+        </li>
 
-                    <input type="radio" id="html" name="company" value="Nintendo">
-                    <label for="Nintendo">Nintendo</label> <br>
+        <li> Company
+            <form>
+                <input type="radio" id="com1" name="company" value="Any">
+                <label for="com1">Any</label> <br>
 
-                    <input type="radio" id="html" name="company" value="UbiSoft">
-                    <label for="Nintendo">UbiSoft</label> <br>
+                <input type="radio" id="com2" name="company" value="Nintendo">
+                <label for="com2">Nintendo</label> <br>
 
-                    <input type="radio" id="html" name="company" value="Electronic Arts">
-                    <label for="Nintendo">Electronic Arts</label> <br>
-                    <br>
-                </form>
-            </li>
-            
-            <li> Age Rating
-                <form> 
+                <input type="radio" id="com3" name="company" value="UbiSoft">
+                <label for="com3">UbiSoft</label> <br>
 
-                    <input type="radio" id="html" name="company" value="Any2">
-                    <label for="Nintendo">Any</label> <br>
-
-                    <input type="radio" id="html" name="company" value="Everyone">
-                    <label for="Nintendo">Everyone</label> <br>
-
-                    <input type="radio" id="html" name="company" value="Everyone10+">
-                    <label for="Nintendo">Everyone 10+</label> <br>
-
-                    <input type="radio" id="html" name="company" value="Teen">
-                    <label for="Nintendo">Teen</label> <br>
-
-                    <input type="radio" id="html" name="company" value="Mature">
-                    <label for="Nintendo">Mature</label> <br>
-                </form>
+                <input type="radio" id="com4" name="company" value="Electronic Arts">
+                <label for="com4">Electronic Arts</label> <br>
                 <br>
-            </li>
+            </form>
+        </li>
 
-            <li> Review Score
+        <li> Age Rating
+            <form>
 
-                <form>
-                <input type="radio" id="html" name="company" value="Nintendo">
-                    <label for="Nintendo">Any</label> <br>
+                <input type="radio" id="age1" name="company" value="Any2">
+                <label for="age1">Any</label> <br>
 
-                    <input type="radio" id="html" name="company" value="Nintendo">
-                    <label for="Nintendo">0-1</label> <br>
+                <input type="radio" id="age2" name="company" value="Everyone">
+                <label for="age2">Everyone</label> <br>
 
-                    <input type="radio" id="html" name="company" value="Nintendo">
-                    <label for="Nintendo">1-2</label> <br>
+                <input type="radio" id="age3" name="company" value="Everyone10+">
+                <label for="age3">Everyone 10+</label> <br>
 
-                    <input type="radio" id="html" name="company" value="Nintendo">
-                    <label for="Nintendo">3-4</label> <br>
+                <input type="radio" id="age4" name="company" value="Teen">
+                <label for="age4">Teen</label> <br>
 
-                    <input type="radio" id="html" name="company" value="Nintendo">
-                    <label for="Nintendo">4-5</label> <br>
+                <input type="radio" id="age5" name="company" value="Mature">
+                <label for="age5">Mature</label> <br>
+            </form>
+            <br>
+        </li>
 
-                    <input type="radio" id="html" name="company" value="Nintendo">
-                    <label for="Nintendo">5-6</label> <br>
+        <li> Review Score
 
-                    <input type="radio" id="html" name="company" value="Nintendo">
-                    <label for="Nintendo">7-8</label> <br>
+            <form>
+            <input type="radio" id="score1" name="company" value="Nintendo">
+                <label for="score1">Any</label> <br>
 
-                    <input type="radio" id="html" name="company" value="Nintendo">
-                    <label for="Nintendo">9-10</label> <br>
+                <input type="radio" id="score2" name="company" value="Nintendo">
+                <label for="score2">0-1</label> <br>
 
-                </form>
+                <input type="radio" id="score3" name="company" value="Nintendo">
+                <label for="score3">1-2</label> <br>
+
+                <input type="radio" id="score4" name="company" value="Nintendo">
+                <label for="score4">3-4</label> <br>
+
+                <input type="radio" id="score5" name="company" value="Nintendo">
+                <label for="score5">4-5</label> <br>
+
+                <input type="radio" id="score6" name="company" value="Nintendo">
+                <label for="score6">5-6</label> <br>
+
+                <input type="radio" id="score7" name="company" value="Nintendo">
+                <label for="score7">7-8</label> <br>
+
+                <input type="radio" id="score8" name="company" value="Nintendo">
+                <label for="score8">9-10</label> <br>
+
+            </form>
 
 
-            </li>
-        </ul>
+        </li>
+    </ul>
     </h3>
 </div>
 </body> 
